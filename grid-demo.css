@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 96%;
+    border: solid red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    display: grid;
+    grid-gap: 20px;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/*Navigation*/
+.nav-bar ul{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgb(243, 243, 240);
+    padding: 20px;
+}
+.nav-bar a{
+    background-color: rgb(203, 209, 209);
+    display: block;
+    padding: 8px 5px;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    font-size: 18px;
+}
+.nav-bar a:hover{
+    background-color: black;
+    color: blanchedalmond;
+}
+/*Top Container*/
+.top-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b'
+}
+.showcase{
+    grid-area: showcase;
+    min-height: 400px;
+    background: url(images/job.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow:4px 4px 4px rgb(24, 23, 23);
+}
+.showcase h1{
+    color: rgb(8, 8, 58);
+    font-size: 40px;
+    margin-bottom: 20px;
+} 
+.showcase p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.showcase a{
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 16px;
+    padding: 10px 5px;
+    border-radius: 7px;
+}
+.showcase a:hover{
+    background-color: rgb(82, 90, 6);
+}
+.top-box-a{
+    grid-area: top-box-a;
+}
+.top-box-b{
+    grid-area: top-box-b;
+}
+.top-box{
+    background-color: rgb(203, 218, 218);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 1px 10px;
+    box-shadow: 5px 5px 5px 5px rgb(95, 94, 94);
+    border-radius: 5px;
+}
+.top-box h1{
+    font-size: 24px;
+    color: rgb(48, 47, 45);
+}
+.top-box p{
+    font-size: 18px;
+}
+.top-box a{
+    background-color: darkgray;
+    color: black;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+.top-box a:hover{
+    background-color: black;
+    color: white;
+}
+.boxes{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.box{
+    background-color: rgb(94, 119, 119);
+    text-align: center;
+    min-height: 100px;
+    padding: 40px 25px;
+    border-radius: 5px;
+    box-shadow: 3px 3px black;
+}
+.box h1{
+    font-size: 25px;
+    color: rgb(37, 35, 35);
+    padding-top: 20px;
+}
+.box p{
+    font-size: 17px;
+    padding-bottom: 40px;
+}
+.box a{
+    background-color: gray;
+    color: black;
+    padding: 8px 6px;
+}

@@ -1,0 +1,166 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(168, 162, 129);
+}
+.container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+nav{
+    background-color: rgb(112, 139, 219);
+}
+nav > a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    padding: 10px 10px 10px 30px;
+    float: left;
+}
+nav > ul{
+    list-style: none;
+    float: right;
+}
+nav::after{
+    content:" ";
+    display: block;
+    clear: both;
+    *zoom: 1;
+}
+nav > ul > li{
+    display: inline-block;
+    padding: 20px;
+    line-height: 50px;
+}
+nav > ul > li> a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+nav > ul:last-child{
+    padding-right: 60px;
+}
+nav > ul > li > a:hover{
+    color: black;
+}
+.banner{
+    min-height: 400px;
+    margin-top: 5px;
+}
+.banner > img{
+    width: 100%;
+    height: 400px;    
+    object-fit: cover;
+}
+.service{
+    background-color: rgb(199, 191, 191);
+}
+.service > h1{
+    text-align: center;
+    font-size: 35px;
+    font-family: serif;
+    padding: 30px;
+}
+.col{
+    width: 300px;
+    font-size: 16px;
+    font-family: serif;
+    margin-left: 20px;
+    float: left;
+    text-align: center;
+    border-right:solid rgb(155, 153, 153);
+    line-height: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+.col:last-child{
+    border-right: none;
+}
+.service::after{
+    content: " ";
+    display:block;
+    clear: both;
+    *zoom: 1;
+}
+.col > h3{
+    font-size: 25px;
+    padding:20px 20px;
+    color:rgb(63, 60, 60);
+}
+.col > p{
+    font-family: serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.col > a{
+    text-decoration: none;
+    color: rgb(253, 252, 252);
+    background-color: black;
+    padding: 7px 5px;
+    border-radius: 0px 20px 20px 0px;
+    border: 3px solid rgb(233, 164, 164);
+    font-family: cursive;
+    font-size: 13px;
+}
+.customer{
+    background-color: rgb(247, 215, 215);
+    text-align: center;
+    padding: 30px;
+    min-height: 300px;
+}
+.customer > h2{
+    font-size: 35px;
+    text-align: center;
+    font-family: serif;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.customer > img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.customer > p{
+    font-size: 18px;
+    padding-bottom: 30px;
+    margin: 10px 100px;
+    text-align: center;
+}
+.customer > a{
+    text-decoration: none;
+    color: rgb(253, 252, 252);
+    background-color: black;
+    padding: 7px 5px;
+    border-radius: 0px 20px 20px 0px;
+    border: 3px solid rgb(233, 164, 164);
+    font-family: cursive;
+    font-size: 13px;
+}
+.customer >a:hover{
+    background-color: rgb(162, 146, 219);
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+footer{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+}
+footer > a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    background-color: black;
+    border-radius: 10px 0px;
+    font-size: 17px;
+}

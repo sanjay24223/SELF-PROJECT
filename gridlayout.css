@@ -1,0 +1,302 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(241, 242, 243);
+}
+.container{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-gap: 20px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(109, 110, 196);
+    grid-gap: 20px;
+    box-shadow: 7px 7px 5px rgb(112, 111, 111);
+}
+
+.logo1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 80px;
+    border-radius: 50px;
+}
+.logo ul img{
+    width: 60px;
+    padding-left: 20px;
+}
+.logo ul{
+    display: flex;
+}
+.logo1 h4{
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.navbar ul{
+    list-style: none;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    background-color: rgb(109, 110, 196);
+    box-shadow: 7px 7px 5px rgb(87, 86, 86);
+}
+.navbar ul li a{
+    text-decoration: none;
+    background-color: rgb(172, 189, 214);
+    padding: 10px 6px;
+    color: black;
+    border-radius: 7px;
+    display: block;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(46, 45, 45);
+}
+.navbar ul li a:hover{
+    background-color: black;
+    color: white;
+}
+.top-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b'
+    'showcase showcase top-box-c';
+}
+.showcase{
+    grid-area: showcase;
+    min-height: 430px;
+    background:url(images/windows10.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 6px 5px 5px rgb(94, 92, 92);
+}
+.top-box-a{
+    grid-area: top-box-a;
+}
+.top-box-b{
+    grid-area: top-box-b;
+}
+.top-box-c{
+    grid-area: top-box-c;
+}
+.showcase a{
+    text-decoration: none;
+    background-color: rgb(114, 145, 180);
+    padding: 10px 5px;
+    color: black;
+    margin-top: 30px;
+}
+.showcase h1{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 40px;
+    color: rgb(221, 215, 215);
+}
+.showcase p{
+    font-size: 18px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+}
+.top-box{
+    background-color: rgb(122, 150, 192);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 10px;
+    box-shadow: 3px 3px 3px rgb(15, 8, 8);
+}
+.btn{
+    background-color: rgb(169, 175, 175);
+    padding: 7px 7px;
+    text-decoration: none;
+    margin: 15px;
+    color: rgb(41, 39, 39);
+    border-radius: 6px;
+}
+.top-box h1{
+    padding: 10px 0px 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.top-box p{
+    font-size: 25px;
+    padding: 10px 0 0 0;
+}
+.boxes{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.boxes img{
+    width: 150px;
+}
+.box{
+    min-height: 300px;
+    background-color: rgb(182, 214, 229);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 6px 6px 5px gray;
+}
+.box h1{
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box p{
+    text-align: center;
+    padding: 20px 20px;
+}
+.box a{
+    border-radius: 6px;
+    background-color: rgb(117, 151, 189);
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+}
+.banner{
+    background: url(images/office.jpg);
+    background-position: bottom;
+    background-size: cover;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 7px 7px 5px rgb(66, 66, 66);
+}
+.banner h1{
+    color: rgb(48, 13, 43);
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.banner p{
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(77, 74, 74);
+    text-align: justify;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.banner a{
+    color: rgb(50, 74, 97);
+    font-size: 20px; 
+    font-weight: 1000;   
+}
+.banner a:hover{
+    color: rgb(75, 102, 11);
+}
+.banner ul li{
+    padding: 10px;
+}
+.banner ul{
+    list-style: disc;
+    color: rgb(96, 122, 172);
+}
+.support{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    background-color:rgb(155, 158, 170) ;
+    padding: 25px;
+    box-shadow: 7px 7px 5px rgb(71, 70, 70);
+}
+.training{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    min-height: 300px;
+    background-color: rgb(155, 158, 170);
+    box-shadow: 7px 7px 6px rgb(68, 67, 67);
+}
+.state{
+    text-align: center;
+    font-size: 17px;
+    padding-top: 20px;
+    line-height: 30px;
+}
+.state h2{
+    font-size: 22px;
+    text-decoration: underline;
+    padding-bottom: 20px;
+    color: rgb(48, 46, 46);
+}
+footer{
+    background-color: rgb(109, 110, 196);
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    box-shadow: 7px 7px 5px rgb(71, 70, 70);
+}
+@media(max-width:700px) {
+    .top-container{
+        grid-template-areas: 
+        'showcase showcase'
+        'top-box-a top-box-b'
+        'top-box-c top-box-c';
+    }
+    .top-container h1{
+        font-size: 18px;
+    }
+    .top-container p{
+        font-size: 18px;
+    }
+    .navbar ul{
+        grid-template-columns: 1fr;
+    }
+    .banner{
+        grid-template-columns: 1fr;
+    }
+    .banner h1{
+        font-size: 22px;
+    }
+    .banner p{
+        font-size: 18px;
+        text-align: center;
+        padding: 0px 10px 20px 10px;
+    }
+    .training{
+        grid-template-areas:
+        state1 state2
+        state3 state4;
+    }
+}
+@media(max-width:500px) {
+    .top-container{
+        grid-template-areas: 
+        'showcase'
+        'top-box-a'
+        'top-box-b'
+         'top-box-c';
+    }
+    }
